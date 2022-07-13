@@ -25,10 +25,10 @@ class HTTP:
 
         info("Network", "Initializing HTTP server")
 
-        if addr_family == "INET":
-            family = socket.AF_INET
-        elif addr_family == "INET6":
+        if addr_family == "INET6":
             family = socket.AF_INET6
+        else:
+            family = socket.AF_INET
 
         self._s = socket.socket(family, socket.SOCK_STREAM)
         self._s.bind(('', port))
