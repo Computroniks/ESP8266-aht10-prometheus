@@ -95,7 +95,7 @@ def readSettings() -> dict:
             "required": False,
             "required_if": None,
             "default": False,
-            "regex": None
+            "regex": "^(TRUE|FALSE)$"
         },
         "ADDR": {
             "type": str,
