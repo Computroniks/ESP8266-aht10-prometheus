@@ -50,6 +50,8 @@ def initWLAN(SSID: str, key: str, timeout: int = 10, static: bool = False, ip: s
             if (time.time() - start) > timeout:
                 break
 
+    ap_if = network.WLAN(network.AP_IF)
+    ap_if.active(False)
     info("Network", "Config {}".format(sta_if.ifconfig()))
     return sta_if.isconnected()
 
