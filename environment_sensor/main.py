@@ -2,7 +2,6 @@
 Main entrypoint for 
 """
 
-from msilib.schema import Registry
 import sys
 
 from .utils import initWLAN, readSettings
