@@ -59,12 +59,3 @@ A table of all settings can be found below:
 | MASK | Only if `STATIC=TRUE` | Subnet mask to use | string | None |
 | GATEWAY | Only if `STATIC=TRUE` | Default gateway to use | string | None |
 | ADDR_FAMILY | Only if `STATIC=TRUE` | Address family to use for HTTP server. One of `INET` or `INET6` | string | None |
-
-## Licence
-
-The majority of this software is licenced under the MIT licence which
-can be found in the root of this repository. However, any files in the
-`environment_sensor/libs` directory may fall under a different licence.
-All files here have been installed using PIP and licensing information
-can be found in the directory `<package name>-<version>.dist-info`.
-These are third party libraries that are used by this project.
